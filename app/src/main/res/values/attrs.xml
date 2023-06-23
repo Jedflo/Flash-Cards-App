@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="dark_bg_txt_color" format="reference"></attr>
+    <attr name="light_bg_txt_color" format="reference"></attr>
+
+    <attr name="background" format="reference"></attr>
+    <attr name="inputs" format="reference"></attr>
+    <attr name="containers" format="reference"></attr>
+    <attr name="card_question" format="reference"></attr>
+    <attr name="card_answer" format="reference"></attr>
+    <attr name="hint_color" format="reference"></attr>
+    <attr name="whole_deck_button_color" format="reference"></attr>
+    <attr name="mistakes_button_color" format="reference"></attr>
+    <attr name="correct_button_color" format="reference"></attr>
+
+
+
+
+</resources>

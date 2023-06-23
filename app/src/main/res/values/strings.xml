@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Fcards App</string>
+    <string name="card_import_export"><u><b>Import Cards</b></u></string>
+</resources>

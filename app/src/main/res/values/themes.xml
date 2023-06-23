@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.FcardsApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/pale_dogwood</item>
+        <item name="colorPrimaryVariant">@color/pale_dogwood</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/Mountbatten_pink</item>
+        <item name="colorSecondaryVariant">@color/Mountbatten_pink</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+        <item name="dark_bg_txt_color">@color/white</item>
+        <item name="light_bg_txt_color">@color/black</item>
+        
+        <item name="background">@color/timberwolf</item>
+        <item name="inputs">@color/pale_dogwood</item>
+        <item name="containers">@color/dim_gray</item>
+        <item name="hint_color">@color/dark_gray</item>
+        <item name="whole_deck_button_color">@color/yellow</item>
+        <item name="mistakes_button_color">@color/red</item>
+        <item name="correct_button_color">@color/green</item>
+
+        <item name="colorButtonNormal">@color/dim_gray</item>
+        <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Colored</item>
+
+    </style>
+    
+    <style name="genericButtonStyle">
+        <item name="backgroundTint">@color/pale_dogwood</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18dp</item>
+        <item name="cornerRadius">25dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+    </style>
+
+
+
+</resources>

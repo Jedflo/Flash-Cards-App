@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    tools:context=".FlashCardModeActivity"
+    android:orientation="vertical"
+    android:background="@color/timberwolf">
+
+
+    <TextView
+        android:id="@+id/tvFlashCardDeckName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Card Deck 1"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvFlashCardDeckDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Card Deck 1 Card Deck 1 Card Deck 1 Card Deck 1 Card Deck 1 Card Deck 1 Card"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvFlashCardCountCorrectValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintEnd_toStartOf="@+id/tvFlashCardSetAttemptCount"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tvFlashCardCountWholeDeckLabel"
+            app:layout_constraintTop_toBottomOf="@+id/tvFlashCardCountMistakesValue" />
+
+        <TextView
+            android:id="@+id/tvFlashCardCountCorrectLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Correct:"
+            android:textStyle="bold"
+            android:paddingStart="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/tvFlashCardCountWholeDeckValue"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFlashCardCountMistakesLabel" />
+
+        <TextView
+            android:id="@+id/tvFlashCardStatLastAttemptLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Last Attempt: "
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tvFlashCardSetAttemptCountValue"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tvFlashCardCountWholeDeckValue"
+            app:layout_constraintTop_toBottomOf="@+id/tvFlashCardSetLastScore" />
+
+        <TextView
+            android:id="@+id/tvFlashCardLastAttempt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="11/11/2023"
+            android:paddingEnd="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tvFlashCardSetAttemptCount"
+            app:layout_constraintTop_toBottomOf="@+id/tvFlashCardSetLastScoreValue" />
+
+        <TextView
+            android:id="@+id/tvFlashCardSetLastScore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Last Score"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tvFlashCardSetAttemptCountValue"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tvFlashCardCountWholeDeckValue"
+            app:layout_constraintTop_toBottomOf="@+id/tvFlashCardSetAttemptCount" />
+
+        <TextView
+            android:id="@+id/tvFlashCardCountMistakesLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Mistakes:"
+            android:textStyle="bold"
+            android:paddingStart="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/tvFlashCardCountWholeDeckValue"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFlashCardCountWholeDeckLabel" />
+
+        <TextView
+            android:id="@+id/tvFlashCardCountMistakesValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintEnd_toStartOf="@+id/tvFlashCardSetAttemptCount"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tvFlashCardCountWholeDeckLabel"
+            app:layout_constraintTop_toBottomOf="@+id/tvFlashCardCountWholeDeckValue"
+            />
+
+        <TextView
+            android:id="@+id/tvFlashCardSetLastScoreValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingEnd="12dp"
+            android:text="10/10 (W)"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tvFlashCardSetAttemptCount"
+            app:layout_constraintTop_toBottomOf="@+id/tvFlashCardSetAttemptCountValue" />
+
+        <TextView
+            android:id="@+id/tvFlashCardSetAttemptCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Attempts"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tvFlashCardSetAttemptCountValue"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvFlashCardCountWholeDeckValue"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvFlashCardCountWholeDeckValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="20 Cards"
+            app:layout_constraintEnd_toStartOf="@+id/tvFlashCardSetAttemptCount"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvFlashCardCountWholeDeckLabel"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvFlashCardSetAttemptCountValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingEnd="12dp"
+            android:text="5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvFlashCardSetAttemptCount"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvFlashCardCountWholeDeckLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Whole Deck:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tvFlashCardCountWholeDeckValue"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingStart="12dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvReviewLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Review"
+        android:layout_marginTop="32dp"
+        />
+
+    <Button
+        android:id="@+id/bWholeDeck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Whole Deck"
+        android:textAllCaps="false"
+        android:textSize="28sp"
+        app:cornerRadius="25dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+         />
+
+    <Button
+        android:id="@+id/bMistakes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Mistakes"
+        android:textAllCaps="false"
+        android:textSize="28sp"
+        app:cornerRadius="25dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"/>
+
+    <Button
+        android:id="@+id/bCorrect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Correct"
+        android:textAllCaps="false"
+        android:textSize="28sp"
+        app:cornerRadius="25dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"/>
+
+    <Button
+        android:id="@+id/bBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_gravity="center|bottom"
+        android:text="Back"
+        android:textAllCaps="false"
+        style="@style/genericButtonStyle"/>
+
+
+</LinearLayout>
+
+
